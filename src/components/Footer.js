@@ -2,9 +2,9 @@ import styles from "./Footer.module.css"
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className={styles.footer}>
       <h3>Um blog para bacons tristes</h3>
-      <p>Mini Blog &copy; 2022</p>
+      <p>Sad Bacon &copy; 2022</p>
     </footer>
   )
 }
