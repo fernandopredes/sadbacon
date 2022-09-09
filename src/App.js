@@ -20,27 +20,25 @@ import { AuthProvider } from './context/AuthContext';
 
 function App() {
 const [user, setUser] = useState(undefined)
-const {auth} = useAuthentication
+const {auth} = useAuthentication()
 
 const loadingUser = user === undefined
 
 
 
-  useEffect(() => {
+useEffect(() => {
+  onAuthStateChanged(auth, (user) => {
+    setUser(user);
+  });
+}, [auth]);
 
-    onAuthStateChanged(auth,(user)=>{
-      setUser(user)
-    })
-
-  },[auth])
-
-  if (loadingUser) {
-    return <p>Carregando um belo Bacon...</p>
-  }
+if (loadingUser) {
+  return <p>Carregando...</p>;
+}
 
   return (
     <div className="App">
-      <AuthProvider>
+      <AuthProvider value={user}>
         <BrowserRouter>
           <Navbar />
             <div className='container'>
