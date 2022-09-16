@@ -3,6 +3,8 @@ import './App.css';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { onAuthStateChanged } from 'firebase/auth';
 
+//hooks
+
 import { useState, useEffect } from 'react';
 import { useAuthentication } from './hooks/useAuthentication';
 
@@ -38,7 +40,7 @@ if (loadingUser) {
 
   return (
     <div className="App">
-      <AuthProvider value={user}>
+      <AuthProvider value={{user}}>
         <BrowserRouter>
           <Navbar />
             <div className='container'>
