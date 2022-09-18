@@ -10,7 +10,7 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const {createUser, error: authError, loading} = useAuthentication()
+  const {login, error: authError, loading} = useAuthentication()
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -23,7 +23,7 @@ const Login = () => {
     }
 
 
-    const res = await createUser(user)
+    const res = await login(user)
 
     console.log(res)
   }
@@ -49,7 +49,7 @@ const Login = () => {
         </label>
         {!loading && <button className="btn">Entrar</button>}
         {loading && <button className="btn" disabled>Aguarde...</button>}
-        {error && <p className="error">{error}</p>}
+        {error && <p className="error">{error}</p>} {/* mostra a imagem do erro */}
       </form>
     </div>
   )
