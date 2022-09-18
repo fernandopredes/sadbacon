@@ -24,7 +24,7 @@ import {
         return;
       }
     }
-
+    //register
     const createUser = async (data) => {
       checkIfIsCancelled()
 
@@ -64,6 +64,15 @@ import {
 
       }
 
+    };
+
+    //logout
+
+    const logout = () => {
+
+      checkIfIsCancelled()
+      signOut(auth)
+
     }
 
     useEffect(() => {
@@ -75,6 +84,7 @@ import {
       auth,
       createUser,
       error,
-      loading
+      loading,
+      logout
     }
  }
