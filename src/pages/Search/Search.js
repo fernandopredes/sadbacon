@@ -16,14 +16,14 @@ export const Search = () => {
   const {documents: posts} = useFetchDocuments('posts', search)
 
   return (
-    <div>
+    <div className={styles.search_container}>
       <h2>Search</h2>
       <div>
         {posts && posts.length === 0 && (
-          <>
+          <div className={styles.noposts}>
             <p>Não existe nenhum post com esse nome.</p>
             <Link to='/' className="btn btn-dark">Voltar</Link>
-          </>
+          </div>
         )}
         {posts && posts.map((post)=> (
           <PostDetail key={post.id} post={post} />
