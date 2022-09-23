@@ -62,5 +62,6 @@ export const useDeleteDocument = (docCollection) => {
   }, [])
 
 
+  
   return {deleteDocument, response}
 }
