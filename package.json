@@ -1,6 +1,7 @@
 {
   "name": "sadbacon",
   "version": "0.1.0",
+  "homepage": "sadbacon/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
