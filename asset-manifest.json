@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/sadbacon/static/css/main.6e3418f9.css",
-    "main.js": "/sadbacon/static/js/main.1d1cc7e5.js",
+    "main.js": "/sadbacon/static/js/main.02c6c952.js",
     "static/js/787.4dc11eb2.chunk.js": "/sadbacon/static/js/787.4dc11eb2.chunk.js",
     "index.html": "/sadbacon/index.html",
     "main.6e3418f9.css.map": "/sadbacon/static/css/main.6e3418f9.css.map",
-    "main.1d1cc7e5.js.map": "/sadbacon/static/js/main.1d1cc7e5.js.map",
+    "main.02c6c952.js.map": "/sadbacon/static/js/main.02c6c952.js.map",
     "787.4dc11eb2.chunk.js.map": "/sadbacon/static/js/787.4dc11eb2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6e3418f9.css",
-    "static/js/main.1d1cc7e5.js"
+    "static/js/main.02c6c952.js"
   ]
 }
