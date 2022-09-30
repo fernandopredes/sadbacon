@@ -1,5 +1,5 @@
 body{
-  background-color: #F6FCFF;
+  background-color: rgb(253, 231, 222);
   padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -31,7 +31,7 @@ nav button{
 
 a:hover,
 nav button:hover{
-  color: #bbb;
+  color: rgb(231, 108, 108);
 }
 
 /* form styles */
@@ -76,7 +76,7 @@ margin-bottom: 25px;
 }
 
 .btn.btn-dark{
-  background-color: #000;
+  background-color: #cc5063;
   border-radius: 0;
 }
 
@@ -89,12 +89,12 @@ margin-bottom: 25px;
 }
 
 .btn:hover{
-  background-color: #ffed47;
-  color: rgb(0, 0, 0);
+  background-color: #ff4778;
+  color: rgb(255, 255, 255);
 }
 
 .btn.btn-outline:hover{
-  background-color: #000;
+  background-color: #ff4778;
 
 }
 
